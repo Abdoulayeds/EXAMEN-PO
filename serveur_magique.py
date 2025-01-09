@@ -74,3 +74,10 @@ def menu_reservation():
         reservation_system.reserver_salle(salle, professeur, date, heure_debut, heure_fin)
     elif choix == "2":
         afficher_menu_principal()
+    else:
+        print("Choix invalide. Veuillez réessayer.")
+        menu_reservation()
+
+# Point d'entrée principal
+if __name__ == "__main__":
+    afficher_menu_principal()
